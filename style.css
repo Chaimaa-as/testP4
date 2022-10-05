@@ -1040,3 +1040,20 @@ h4 {
         text-align: center;
     }
 }
+
+/* MINE A VERIFIER */
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+cite {
+    font-style: normal;
+}
+cite span{
+    text-transform: capitalize;
+}
