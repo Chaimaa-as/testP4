@@ -818,7 +818,7 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/resize/Banniere-LaptopL-1440w.jpg");
 }
 
 .bg-presentation {
@@ -1057,3 +1057,14 @@ cite {
 cite span{
     text-transform: capitalize;
 }
+
+iframe{
+    margin-bottom:2rem;
+}
+
+
+
+/* picture img{
+    width:100%;
+    height:auto;
+} */

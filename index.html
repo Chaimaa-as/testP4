@@ -2,8 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <!-- <meta name="keywords" content="seo, site internet, agence web design lyon"> -->
-    <meta name="description" content="Agence de web design à Lyon">
+    <meta name="keywords" content="Agence développement web, ERP/CRM, Application, E-comerce, référencement, Google | La Panthère">
+    <meta name="description" content="L'agence La Panthère est une agence de web design qui aide
+	les entreprises à devenir attractives et visibles sur Internet">
 	
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
@@ -14,8 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script> 
+	<script src="./js/bootstrap.js"></script> <!--/ "async src" sur les script?-->
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
 	<script src="./js/gmaps.js"></script>
@@ -51,6 +52,9 @@
 
 				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 					<ul class="site-navigation nav navbar-nav">
+						<li>
+							<a href="index.html">Accueil</a>
+						</li>
 						<li>
 							<a href="page2.html">Contact</a>
 						</li>
@@ -197,7 +201,7 @@
 
 							<p class="text-center white">
 								Nous aimons collaborer avec des entrepreneurs créatifs 
-								et des entreprises locale, 
+								et des entreprises locales, 
 								qu’elles aient besoin de créer un site de A à Z 
 								ou de donner un coup de jeune à leur site. 
 								Que vous ayez besoin d’une identité visuelle complète 
@@ -219,7 +223,7 @@
 		<!-- bloc-4-portfolio / SECTION 4 PORTFOLIO -->
 		<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" 
 		id="bloc-4-portfolio">
-			<div class="container bloc-lg">
+			<div class="container bloc-lg chaimaa-article">
 
 				<div class="row">
 					<div class="col-sm-12 text-center">
@@ -227,15 +231,23 @@
 						voici nos réalisations.</p>
 					</div>
 				</div>
-
+			
 				<div class="row tight-width-whitespace portfolio-row">
 
 					<div class="col-sm-6">
-						<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" 
-						data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
-						<img src="img/1.jpg" 
-						alt="paris web design logo agence web meilleure agence et refonte site web journal" 
-						class="img-responsive portfolio-thumb"></a>
+
+						<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
+							<picture>
+								<source media="(max-width: 499px)" srcset="img/resize/img1-MobileS-320w.jpg">
+								<!-- <source media="" Srcset="img/resize/img1-MobileSSS-270w.jpg">	 -->
+								<img class="img-responsive portfolio-thumb" src="img/resize/img1-MobileSSS-270w.jpg" alt="">
+							</picture>
+						</a>
+						
+						<!-- <img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb"></a> -->
+						<!-- code images à mettre ci-dessous -->
+
+					
 						
 						<h3 class="mg-md text-center">
 							Refonte d'un site web pour un journal local
@@ -248,11 +260,21 @@
 
 
 					<div class="col-sm-6">
-						<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" 
-						data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
-						<img src="img/2.jpg" class="img-responsive portfolio-thumb" 
-						alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"></a>
+						<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+							<picture>
+								<source media="(max-width: 499px)" 
+								srcset="img/resize/img2-MobileS-320w.jpg">
+								<!-- <source media="" Srcset="img/resize/img2-MobileSSS-270w.jpg"> -->
+								<img class="img-responsive portfolio-thumb" src="img/resize/img2-MobileSSS-270w.jpg" alt="">
+							</picture>
+						</a>
 						
+						<!-- <img src="img/2.jpg" class="img-responsive portfolio-thumb"
+						alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"-->
+
+						<!-- code images à mettre là -->
+						
+
 						<h3 class="mg-md text-center">
 							Création d'un site web pour photographes
 						</h3>
@@ -269,15 +291,18 @@
 					<div class="col-sm-6">
 						<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" 
 						data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+						
 						<img src="img/3.bmp" class="img-responsive portfolio-thumb" 
 						alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"></a>
-						
+						<!-- code images à mettre là -->
+
 						<h3 class="mg-md text-center">
 							Création d'un site internet pour un voyageur
 						</h3>
 						
 						<p class="text-center">
-							Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos 
+							Nous avons élaboré un site internet 
+							et des illustrations pour sublimer les vidéos 
 							et les articles de ce voyageur.
 						</p>
 					</div>
@@ -285,15 +310,20 @@
 					<div class="col-sm-6">
 						<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" 
 						data-caption="Conception d'un site pour une agence de mariage" 
-						data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" 
+						data-frame="snapshot-lb">
+						
+						<img src="img/4.bmp" class="img-responsive portfolio-thumb" 
 						alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"></a>
 						
+						<!-- code images à mettre là -->
+
 						<h3 class="mg-md text-center">
 							Conception d'un site pour une agence de mariage
 						</h3>
 						
 						<p class="text-center">
-							Nous avons travaillé avec cette agence pour créer un site internet 
+							Nous avons travaillé avec cette agence 
+							pour créer un site internet 
 							permettant la présentation détaillée de leurs prestations.
 						</p>
 					</div>
@@ -325,7 +355,13 @@
 		</div>
 		<!-- bloc-5-cta END -->
 	</main>
+	<!-- ScrollToTop Button -->
+	<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+	<!-- ScrollToTop Button END-->
+
+
 	<!-- Footer - bloc-8 -->
+	
 	<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 		<div class="container bloc-sm">
 			<div class="row">
