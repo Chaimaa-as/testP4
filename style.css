@@ -1058,13 +1058,6 @@ cite span{
     text-transform: capitalize;
 }
 
-iframe{
-    margin-bottom:2rem;
+i .fa-regular{
+    font-weight: 400;
 }
-
-
-
-/* picture img{
-    width:100%;
-    height:auto;
-} */
