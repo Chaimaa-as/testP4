@@ -305,6 +305,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    height:60px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -677,7 +678,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -705,7 +706,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 30px;
     line-height: 1.4em;
 }
 
@@ -753,7 +754,9 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    /* background-color: rgba(165, 147, 99, 0.7); */
+    background-color:rgba(0, 0, 0, 0.8);
+    /* background-color:rgba(243, 151, 108, 1); */
     padding: 40px 40px 40px 40px;
 }
 
@@ -818,14 +821,20 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/resize/Banniere-LaptopL-1440w.jpg");
+    background-image: url("img/hero-1600.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/banner-800.jpg");
 }
 
+
+
+/* CHANGEMENT DES LIENS DES IMAGES */
 @media (max-width: 1024px) {
+    .bg-banniere{
+        background-image: url("img/hero-1600.jpg");
+    }
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -886,6 +895,9 @@ h4 {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+    .bg-banniere{
+        background-image: url("img/hero-1600.jpg");
     }
 }
 
@@ -1043,11 +1055,15 @@ h4 {
 
 /* MINE A VERIFIER */
 
-blockquote p::before {
+blockquote p{
+    font-size:20px;
+}
+
+blockquote p::before{
     content: '\201C';
 }
 
-blockquote p::after {
+blockquote p::after{
     content: '\201D';
 }
 
@@ -1060,4 +1076,47 @@ cite span{
 
 i .fa-regular{
     font-weight: 400;
+}
+
+
+
+#bloc-4-portfolio .text-center p{
+    font-size: 25px;
+}
+
+#bloc-2-services .text-center p{
+    font-size: 20px;
+    padding:0 10%;
+}
+
+#bloc-2-services .text-center strong{
+    font-size: 20px;
+    padding:0 10%;
+}
+
+#bloc-4-portfolio .portfolio-row p{
+    font-size: 18px;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .bg-banniere{
+        background-image: url("img/hero-Billboard-970.jpg");
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .bg-banniere{
+        background-image: url("img/hero-1600.jpg");
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .bg-banniere{
+        background-image: url("img/hero-978.jpg");
+    }
+}
+
+@media (max-width: 400px) {
+    .bg-banniere{
+        background-image: url("img/hero-Billboard-970.jpg");
+    }
 }
