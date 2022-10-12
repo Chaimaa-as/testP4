@@ -896,9 +896,6 @@ h4 {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
-    .bg-banniere{
-        background-image: url("img/hero-1600.jpg");
-    }
 }
 
 @media (max-width: 767px) {
@@ -1094,24 +1091,27 @@ i .fa-regular{
     padding:0 10%;
 }
 
-#bloc-4-portfolio .portfolio-row p{
-    font-size: 18px;
+#bloc-4-portfolio .portfolio-row h3{
+    font-size: 17px;
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
-    .bg-banniere{
-        background-image: url("img/hero-Billboard-970.jpg");
-    }
+#bloc-4-portfolio .portfolio-row p{
+    font-size: 16px;
+}
+
+#bloc-5-cta .row p{
+    font-size: 26px;
+    color:white!important;
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .bg-banniere{
-        background-image: url("img/hero-1600.jpg");
+        background-image: url("img/hero-Billboard-970.jpg");
     }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .bg-banniere{
-        background-image: url("img/hero-978.jpg");
+        background-image: url("img/hero-Billboard-970.jpg");
     }
 }
 
