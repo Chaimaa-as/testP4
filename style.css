@@ -1052,8 +1052,8 @@ h4 {
 
 @media (max-width: 400px) {
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 6px;
+        padding-right: 6px;
     }
 }
 
@@ -1116,7 +1116,13 @@ figcaption{
 
 #bloc-4-portfolio .portfolio-row p{
     font-size: 18px;
+    padding-bottom:50px;
 }
+
+#bloc-4-portfolio .portfolio-row a:hover{
+    transform:scale(1);
+}
+
 
 .scrollToTop span{
     color: white !important;
@@ -1130,6 +1136,10 @@ figcaption{
     font-size: 21px;
     letter-spacing: 1px;
 }
+
+/* #bloc-6 .bg-banniere-var{
+    background-image: url("img/hero/hero-1025-464.jpg");
+} */
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .bg-banniere{
