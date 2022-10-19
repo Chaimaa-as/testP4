@@ -837,12 +837,42 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/hero/hero_originale.jpg");
-    
+    background-image: url("img/hero_1280w.jpg");
+    width: 100vw;
+}
+/* MEDIA QUERIES */
+@media (max-width: 640px){
+    .bg-banniere{
+        background-image: url("img/hero/hero-Billboard-970.jpg");
+        width: 100vw;
+    }
 }
 
+@media (min-width: 641px) and (max-width: 800px){
+    .bg-banniere{
+        background-image: url("img/hero_1280w.jpg");
+        width: 100vw;
+
+    
+    }
+}
+@media (min-width: 1025px){
+    .bg-banniere{
+        background-image: url("img/hero_1280w.jpg");
+        width: 100vw;
+    }
+}
+@media only screen and (min-width: 801px) and (max-width: 1024px) and (orientation: landscape) {
+    .bg-banniere{
+        background-image: url("img/hero/hero-Billboard-970.jpg");
+        width: 100vw;
+        height:280px;
+    }
+}
+
+
 .bg-presentation {
-    background-image: url("img/banners/banner-800.jpg");
+    background-image: url("img/banners/banner-800.webp");
 }
 
 
@@ -870,13 +900,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -894,10 +924,15 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+
+    /* REMONTE ERREURS VALIDATEUR CSS
+    
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } 
+    REMONTE ERREURS VALIDATEUR CSS*/
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -906,8 +941,9 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
+        /* REMONTE ERREURS VALIDATEUR CSS
         padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-right: constant(safe-area-inset-right); */
     }
 }
 
@@ -984,7 +1020,7 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
+        max-height: 39px;
         width: auto;
     }
     .nav-invert .navbar-header {
@@ -1119,7 +1155,7 @@ figcaption{
 }
 
 #bloc-6 h2{
- font-size: 30px;
+ font-size: 27px;
 }
 
 #bloc-7 h2{
@@ -1127,7 +1163,6 @@ figcaption{
     color: #575757!important;
     font-size: 24px;
     padding-bottom: 16px;
-    
 }
 
 #bloc-8 p{
@@ -1139,51 +1174,3 @@ iframe{
     width:100%;
 }
 
-/* #bloc-6 .bg-banniere-var{
-    background-image: url("img/hero/hero-1025-464.jpg");
-} */
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .bg-banniere{
-
-        background-image: url("img/hero/hero-1600.jpg");
-    }
-}
-
-/* @media (max-width: 1024px) {
-    .bg-banniere{
-        background-image: url("img/hero/hero-768-454.jpg");
-    }
-} */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .bg-banniere{
-        background-image: url("img/hero/hero-1025-464.jpg");
-    }
-}
-
-@media (max-width: 767px) {
-    .bg-banniere{
-   
-        background-image: url("img/hero/hero-Billboard-970.jpg");
-    }
-}
-
-@media (max-width: 425px) {
-    .bg-banniere{
-        background-image: url("img/hero/hero-Billboard-970.jpg");
-      
-    }
-}
-@media (max-width: 375px) {
-    .bg-banniere{
-        background-image: url("img/hero/hero-Billboard-970.jpg");
-    
-    }
-}
-@media (max-width: 320px) {
-    .bg-banniere{
-        background-image: url("img/hero/hero-425-333.jpg");
-      
-    }
-}
